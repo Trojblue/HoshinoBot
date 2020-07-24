@@ -31,6 +31,22 @@ async def do_dice(bot, ev, num, min_, max_, opr, offset, TIP="的掷骰结果是
     await bot.send(ev, msg, at_sender=True)
 
 
+# @sv.on_rex(re.compile(r'^\.r\s*((?P<num>\d{0,2})d((?P<min>\d{1,4})~)?(?P<max>\d{0,4})((?P<opr>[+-])(?P<offset>\d{0,5}))?)?\b', re.I))
+# async def dice(bot, ev):
+#     num, min_, max_, opr, offset = 1, 1, 100, 1, 0
+#     match = ev['match']
+#     if s := match.group('num'):
+#         num = int(s)
+#     if s := match.group('min'):
+#         min_ = int(s)
+#     if s := match.group('max'):
+#         max_ = int(s)
+#     if s := match.group('opr'):
+#         opr = -1 if s == '-' else 1
+#     if s := match.group('offset'):
+#         offset = int(s)
+#     await do_dice(bot, ev, num, min_, max_, opr, offset)
+
 @sv.on_rex(re.compile(r'^\.r\s*((?P<num>\d{0,2})d((?P<min>\d{1,4})~)?(?P<max>\d{0,4})((?P<opr>[+-])(?P<offset>\d{0,5}))?)?\b', re.I))
 async def dice(bot, ev):
     num, min_, max_, opr, offset = 1, 1, 100, 1, 0

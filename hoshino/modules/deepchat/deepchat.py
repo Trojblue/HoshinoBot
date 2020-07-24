@@ -1,10 +1,13 @@
 import random
+import re
+
 import hoshino
 from hoshino import Service, aiorequests, priv
 
 sv = Service('deepchat', manage_priv=priv.SUPERUSER, enable_on_default=False, visible=False)
 
-@sv.on_message('group')
+# @sv.on_message('group')
+@sv.on_message()
 async def deepchat(bot, ctx):
     msg = ctx['message'].extract_plain_text()
     if not msg or random.random() > 0.025:
