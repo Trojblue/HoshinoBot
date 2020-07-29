@@ -1,5 +1,70 @@
 
 
+# debug: 生成结尾不同
+
+```python
+            top10_responses = [] # (内容, loss)
+            for response in candidate_responses:
+                mmi_input_id = [tokenizer.cls_token_id]  # 每个input以[CLS]为开头
+                mmi_input_id.extend(response)
+                mmi_input_id.append(tokenizer.sep_token_id)
+                for history_utr in reversed(history[-args.max_history_len:]):
+                    mmi_input_id.extend(history_utr)
+                    mmi_input_id.append(tokenizer.sep_token_id)
+                mmi_input_tensor = torch.tensor(mmi_input_id).long().to(device)
+                out = mmi_model(input_ids=mmi_input_tensor, labels=mmi_input_tensor)
+                loss = out[0].item()
+                text = tokenizer.convert_ids_to_tokens(response)
+                print("{} loss:{}".format("".join(text), loss))
+                top10_responses.append((''.join(text), loss))
+
+                samples_file.write("{} loss:{}\n".format("".join(text), loss))
+
+            top10_responses.sort(key=lambda tup: tup[1])    # todo: 写的这部分会搞坏第二次输入
+
+            if  (top10_responses[1][1] - top10_responses[0][1] > 0.2) and top10_responses[0][1] > 3:
+                best_response = top10_responses[0][0]
+            else:
+                best_response = top10_responses[1][0]
+
+            history.append(best_response)
+            text = best_response
+            print("chatbot:" + text)
+            if args.save_samples_path:
+                samples_file.write("chatbot:{}\n".format(text))
+
+            return best_response    #第二小loss的meg部分
+```
+
+
+
+
+
+# debug: 发不出短文字
+
+1. help可以发出来
+2. help删的太短发不出来
+3. 自定义的短文字发不出来
+4. model1里的长文字可以发出来
+5. 差不多长度的文字修改后可以发出来
+6. 上面的文字改短了发不出来
+7. 酷q里短消息应答发不出来, 长消息可以
+
+
+
+发送成功的文本:
+
+```ev
+<Event, {'anonymous': None, 'font': 66996688, 'group_id': 582368081, 'message': [{'type': 'text', 'data': {'text': ''}}], 'message_id': 168, 'message_type': 'group', 'post_type': 'message', 'raw_message': 'help', 'self_id': 2432518641, 'sender': {'age': 30, 'area': '长沙', 'card': '', 'level': '潜水', 'nickname': 'null', 'role': 'owner', 'sex': 'male', 'title': '', 'user_id': 570879411}, 'sub_type': 'normal', 'time': 1595790063, 'user_id': 570879411, 'to_me': False, 'prefix': 'help'}>
+
+```
+
+发送失败的文本:
+```ev
+<Event, {'anonymous': None, 'font': 67865848, 'group_id': 582368081, 'message': [{'type': 'text', 'data': {'text': ''}}], 'message_id': 172, 'message_type': 'group', 'post_type': 'message', 'raw_message': '沙雕机器人', 'self_id': 2432518641, 'sender': {'age': 30, 'area': '长沙', 'card': '', 'level': '潜水', 'nickname': 'null', 'role': 'owner', 'sex': 'male', 'title': '', 'user_id': 570879411}, 'sub_type': 'normal', 'time': 1595790213, 'user_id': 570879411, 'to_me': False, 'prefix': '沙雕机器人'}>
+```
+
+
 ## 其他
 
 `msg = str(ev.message)` : string格式的输入

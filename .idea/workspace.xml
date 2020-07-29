@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1db4ded-8892-4df0-b0ba-98e4920358a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/HoshinoBot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hoshino/.idea/hoshino.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hoshino/modules/tr0jan/model1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HoshinoBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HoshinoBot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoshino/modules/botmanage/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/hoshino/modules/botmanage/help.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hoshino/modules/deepchat/deepchat.py" beforeDir="false" afterPath="$PROJECT_DIR$/hoshino/modules/deepchat/deepchat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoshino/modules/dice/dice.py" beforeDir="false" afterPath="$PROJECT_DIR$/hoshino/modules/dice/dice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoshino/modules/groupmaster/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/hoshino/modules/groupmaster/chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoshino/modules/tr0jan/model1.py" beforeDir="false" afterPath="$PROJECT_DIR$/hoshino/modules/tr0jan/model1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/personal notes.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,6 @@
   <component name="ProjectId" id="1f6pVpODdG2GDgGeYoiXwuyKo9a" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -81,58 +78,66 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595548422128</updated>
-      <workItem from="1595548423914" duration="7531000" />
+      <workItem from="1595548423914" duration="9133000" />
+      <workItem from="1595635025820" duration="3021000" />
+      <workItem from="1595687524927" duration="1244000" />
+      <workItem from="1595801178774" duration="11510000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1256" y="279" key="#Notifications" timestamp="1595549173930">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
     <state x="1256" y="279" key="#Notifications/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595549173930" />
-    <state width="1272" height="457" key="GridCell.Tab.0.bottom" timestamp="1595553490098">
+    <state x="518" y="278" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595821423619">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.0.bottom/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553490098" />
-    <state width="1272" height="457" key="GridCell.Tab.0.center" timestamp="1595553490098">
+    <state x="518" y="278" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821423619" />
+    <state width="1158" height="471" key="GridCell.Tab.0.bottom" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.0.center/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553490098" />
-    <state width="1272" height="457" key="GridCell.Tab.0.left" timestamp="1595553490098">
+    <state width="1158" height="471" key="GridCell.Tab.0.bottom/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state width="1158" height="471" key="GridCell.Tab.0.center" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.0.left/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553490098" />
-    <state width="1272" height="457" key="GridCell.Tab.0.right" timestamp="1595553490098">
+    <state width="1158" height="471" key="GridCell.Tab.0.center/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state width="1158" height="471" key="GridCell.Tab.0.left" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.0.right/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553490098" />
-    <state width="1272" height="457" key="GridCell.Tab.1.bottom" timestamp="1595553500496">
+    <state width="1158" height="471" key="GridCell.Tab.0.left/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state width="1158" height="471" key="GridCell.Tab.0.right" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.1.bottom/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553500496" />
-    <state width="1272" height="457" key="GridCell.Tab.1.center" timestamp="1595553500496">
+    <state width="1158" height="471" key="GridCell.Tab.0.right/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state width="1158" height="471" key="GridCell.Tab.1.bottom" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.1.center/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553500496" />
-    <state width="1272" height="457" key="GridCell.Tab.1.left" timestamp="1595553500496">
+    <state width="1158" height="471" key="GridCell.Tab.1.bottom/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state width="1158" height="471" key="GridCell.Tab.1.center" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.1.left/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553500496" />
-    <state width="1272" height="457" key="GridCell.Tab.1.right" timestamp="1595553500496">
+    <state width="1158" height="471" key="GridCell.Tab.1.center/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state width="1158" height="471" key="GridCell.Tab.1.left" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state width="1272" height="457" key="GridCell.Tab.1.right/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595553500496" />
-    <state x="1165" y="263" key="SettingsEditor" timestamp="1595548434006">
+    <state width="1158" height="471" key="GridCell.Tab.1.left/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state width="1158" height="471" key="GridCell.Tab.1.right" timestamp="1595821510523">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state x="1165" y="263" key="SettingsEditor/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595548434006" />
-    <state x="1097" y="220" width="767" height="894" key="find.popup" timestamp="1595557512120">
+    <state width="1158" height="471" key="GridCell.Tab.1.right/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595821510523" />
+    <state x="1165" y="263" key="SettingsEditor" timestamp="1595688137421">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
-    <state x="1097" y="220" width="767" height="894" key="find.popup/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595557512120" />
+    <state x="1165" y="263" key="SettingsEditor/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595688137421" />
+    <state x="4802" y="402" width="670" height="801" key="find.popup" timestamp="1595685366434">
+      <screen x="3906" y="209" width="1854" height="1080" />
+    </state>
+    <state x="4802" y="402" width="670" height="801" key="find.popup/71.0.2123.1234/3906.209.1854.1080@3906.209.1854.1080" timestamp="1595685366434" />
+    <state x="1097" y="220" width="767" height="894" key="find.popup/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595561105484" />
     <state x="1296" y="279" width="672" height="678" key="search.everywhere.popup" timestamp="1595557189001">
       <screen x="71" y="0" width="2123" height="1234" />
     </state>
@@ -141,11 +146,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hoshino/modules/deepchat/deepchat.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/hoshino/modules/tr0jan/model1.py</url>
           <line>29</line>
@@ -161,10 +161,20 @@
           <line>9</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hoshino/modules/deepchat/deepchat.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hoshino/modules/deepchat/deepchat.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HoshinoBot$run.coverage" NAME="run Coverage Results" MODIFIED="1595553490005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HoshinoBot$run.coverage" NAME="run Coverage Results" MODIFIED="1595821437501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
